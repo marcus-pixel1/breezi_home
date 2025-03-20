@@ -1,0 +1,61 @@
+<svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brushGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Toothbrush body -->
+  <rect x="180" y="120" width="40" height="320" rx="20" fill="url(#brushGradient)" />
+  
+  <!-- Toothbrush head -->
+  <rect x="170" y="40" width="60" height="80" rx="10" fill="#fff" stroke="#f472b6" stroke-width="2" />
+  
+  <!-- Bristles -->
+  <g transform="translate(175, 50)">
+    <rect x="0" y="0" width="50" height="60" rx="5" fill="#fff" />
+    <g>
+      <circle cx="8" cy="10" r="2" fill="#f9a8d4" />
+      <circle cx="18" cy="10" r="2" fill="#f9a8d4" />
+      <circle cx="28" cy="10" r="2" fill="#f9a8d4" />
+      <circle cx="38" cy="10" r="2" fill="#f9a8d4" />
+      
+      <circle cx="8" cy="20" r="2" fill="#f9a8d4" />
+      <circle cx="18" cy="20" r="2" fill="#f9a8d4" />
+      <circle cx="28" cy="20" r="2" fill="#f9a8d4" />
+      <circle cx="38" cy="20" r="2" fill="#f9a8d4" />
+      
+      <circle cx="8" cy="30" r="2" fill="#f9a8d4" />
+      <circle cx="18" cy="30" r="2" fill="#f9a8d4" />
+      <circle cx="28" cy="30" r="2" fill="#f9a8d4" />
+      <circle cx="38" cy="30" r="2" fill="#f9a8d4" />
+      
+      <circle cx="8" cy="40" r="2" fill="#f9a8d4" />
+      <circle cx="18" cy="40" r="2" fill="#f9a8d4" />
+      <circle cx="28" cy="40" r="2" fill="#f9a8d4" />
+      <circle cx="38" cy="40" r="2" fill="#f9a8d4" />
+      
+      <circle cx="8" cy="50" r="2" fill="#f9a8d4" />
+      <circle cx="18" cy="50" r="2" fill="#f9a8d4" />
+      <circle cx="28" cy="50" r="2" fill="#f9a8d4" />
+      <circle cx="38" cy="50" r="2" fill="#f9a8d4" />
+    </g>
+  </g>
+  
+  <!-- Power button -->
+  <circle cx="200" cy="240" r="15" fill="white" stroke="#f472b6" stroke-width="2" />
+  <circle cx="200" cy="240" r="8" fill="#f472b6" />
+  
+  <!-- Mode indicator -->
+  <rect x="185" y="280" width="30" height="5" rx="2.5" fill="white" />
+  <rect x="185" y="290" width="30" height="5" rx="2.5" fill="white" />
+  <rect x="185" y="300" width="30" height="5" rx="2.5" fill="white" />
+  
+  <!-- Glow effect -->
+  <circle cx="200" cy="240" r="25" fill="#f472b6" opacity="0.2" filter="url(#glow)" />
+</svg>
